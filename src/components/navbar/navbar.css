@@ -1,0 +1,27 @@
+.navbar-link{
+     position: relative;
+}
+#mobile-menu ul li{
+     position: relative;
+}
+.navbar-link::after , #mobile-menu ul li a::after{
+     content: "";
+     display: inline-block;
+     position: absolute;
+     right:0;
+     bottom: 0;
+     width:100%;
+     transform: scale(0);
+     height: 1px;
+     background-color: var(--color-brand-primary);
+     transition: 300ms;
+}
+.navbar-link:hover::after , #mobile-menu ul li a:hover::after{
+transform: scale(1);
+}
+#mobile-menu{
+z-index: 1000;
+}
+.text-direction{
+     direction: ltr;
+}

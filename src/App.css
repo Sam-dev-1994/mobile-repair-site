@@ -1,0 +1,10 @@
+.contact-btn:hover{
+     color: #fff !important;
+     background-color: var(--color-brand-primary);
+}
+.contact-btn-icon{
+     color:var(--color-brand-primary);
+}
+.contact-btn:hover > .contact-btn-icon{
+     color: #fff !important;
+}

@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root{
+     --swiper-theme-color: #049e87 !important;
+}
+@layer base{
+   html , body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        border: none ;
+   }
+}
+@theme{
+     --color-dark-bg:#030D1EFF;
+     --color-brand-primary:#09d3b4;
+     --color-brand-secondary:#049e87;
+     --color-brand-gray:#272F3E;
+     --color-brand-info: #dff6f4;
+}
+body{
+     font-family: 'Vazirmatn UI', sans-serif;
+}
+.swiper , .swiper-container , .swiper-slide ,.swiper-button-next , .swiper-button-prev ,
+.swiper-pagination-bullet:focus , .swiper-pagination-bullet:active , .swiper-pagination-bullet
+{
+     border: none !important;
+     outline: none !important;
+     box-shadow: none !important;
+}
+.repairGallery .gallery-swiper{
+     padding-bottom: 50px !important;
+     position: relative;
+}
+.repairGallery .gallery-swiper .swiper-pagination{
+     bottom: 10px !important;
+}
+.repairGallery .gallery-swiper .swiper-button-next ,
+.repairGallery .gallery-swiper .swiper-button-prev{
+     background-color: rgba(0,0,0,0.09);
+     width: 50px;
+     height: 50px;
+     padding: 9px;
+     border-radius: 50%;
+     color: #3c3b3b !important;
+     transition: all 300ms ease;
+     top: calc(50% - 27px) !important;
+}
+.repairGallery .gallery-swiper .swiper-button-next::after ,
+.repairGallery .gallery-swiper .swiper-button-prev::after{
+     font-size: 18px !important;
+     font-weight: bold;
+}
+.repairGallery .gallery-swiper .swiper-button-next:hover ,
+.repairGallery .gallery-swiper .swiper-button-prev:hover{
+     background-color: #fff;
+     box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+@media  (max-width: 640px) {
+     .repairGallery .gallery-swiper .swiper-button-next ,
+     .repairGallery .gallery-swiper .swiper-button-prev{
+          width: 45px;
+          height: 45px;
+          padding: 8px;
+     }
+     .repairGallery .gallery-swiper .swiper-button-next::after ,
+     .repairGallery .gallery-swiper .swiper-button-prev::after{
+          font-size: 5px !important;
+     }
+}
