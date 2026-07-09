@@ -11,4 +11,5 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] }),
 
   ],
+  base:"/mobile-repair-site/"
 })
