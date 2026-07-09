@@ -14,21 +14,21 @@ const defaultSlides = [
       title: 'تعمیرات تخصصی',
       titleHighLight:' انواع تلفن همراه',
       description: 'ارائه خدمات تعمیرات موبایل با دقت, سرعت و استفاده از قطعات با کیفیت.',
-      image: "/images/slider_1.webp",
+      image: `${import.meta.env.BASE_URL}/images/slider_1.webp`,
    },
    {
       id: 2,
       title: 'ارائه خدمات ',
       titleHighLight:' همراه با ضمانت',
       description: 'تعویض ال سی دی با قطعات با کیفیت و ضمانت یکماهه',
-      image: '/images/slider_2.jpg',
+      image: `${import.meta.env.BASE_URL}/images/slider_2.jpg`,
    },
    {
       id: 3,
       title: 'خدمات تخصصی در',
       titleHighLight:' پاساژ علاءالدین',
       description: 'ارائه خدمات در معتبرترین مرکز موبایل تهران',
-      image: '/images/slider_3.webp',
+      image: `${import.meta.env.BASE_URL}/images/slider_3.webp`,
    }
 ];
 

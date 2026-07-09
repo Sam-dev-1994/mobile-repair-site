@@ -8,14 +8,14 @@ import 'swiper/css/effect-coverflow';
 
 export default function RepairGallery() {
    const galleryData = [
-      {id:1 , title:'تعمیر ال سی دی', url:'/images/gallery_1.jpg'},
-      {id:2 , title:'تعمیر ال سی دی', url:'/images/gallery_2.jpg'},
-      {id:3 , title:'تعمیر ال سی دی', url:'/images/gallery_3.jpg'},
-      {id:4 , title:'تعمیر ال سی دی', url:'/images/gallery_4.jpg'},
-      {id:5 , title:'تعمیر ال سی دی', url:'/images/gallery_5.jpg'},
-      {id:6 , title:'تعمیر ال سی دی', url:'/images/gallery_6.jpg'},
-      {id:7 , title:'تعمیر ال سی دی', url:'/images/gallery_7.jpg'},
-      {id:8 , title:'تعمیر ال سی دی', url:'/images/gallery_8.jpg'}
+      {id:1 , title:'تعمیر ال سی دی', url:`${import.meta.env.BASE_URL}/images/gallery_1.jpg`},
+      {id:2 , title:'تعمیر ال سی دی', url:`${import.meta.env.BASE_URL}/images/gallery_2.jpg`},
+      {id:3 , title:'تعمیر ال سی دی', url:`${import.meta.env.BASE_URL}/images/gallery_3.jpg`},
+      {id:4 , title:'تعمیر ال سی دی', url:`${import.meta.env.BASE_URL}/images/gallery_4.jpg`},
+      {id:5 , title:'تعمیر ال سی دی', url:`${import.meta.env.BASE_URL}/images/gallery_5.jpg`},
+      {id:6 , title:'تعمیر ال سی دی', url:`${import.meta.env.BASE_URL}/images/gallery_6.jpg`},
+      {id:7 , title:'تعمیر ال سی دی', url:`${import.meta.env.BASE_URL}/images/gallery_7.jpg`},
+      {id:8 , title:'تعمیر ال سی دی', url:`${import.meta.env.BASE_URL}/images/gallery_8.jpg`}
    ]
    return (
        <div className="container w-full mx-auto px-3 py-6">

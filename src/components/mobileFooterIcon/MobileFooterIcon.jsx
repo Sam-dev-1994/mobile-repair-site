@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import logo from "../../assets/logo.webp";
 
 export default function MobileFooterIcon() {
    return (
        <div  className=" w-full md:hidden mb-8">
           <div className="flex justify-center items-center">
              <a href="#" className="inline-block w-2/5 aspect-[3/1] ">
-                <img src="/src/assets/logo.webp" className="block w-full" alt=""/>
+                <img src={logo} className="block w-full" alt=""/>
              </a>
           </div>
           <div className="flex justify-center items-center text-center">
