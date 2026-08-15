@@ -1,0 +1,18 @@
+.category-bg{
+     background-size: contain ;
+     background-position: -20px 5px ;
+     background-repeat: no-repeat ;
+}
+@media (width >= 40rem /* 768px */) {
+     .category-bg{
+          background-position: -30px 5px ;
+
+     }
+}
+@media (width >= 48rem /* 768px */) {
+     .category-bg{
+          background-position: -40px 5px ;
+
+     }
+}
+

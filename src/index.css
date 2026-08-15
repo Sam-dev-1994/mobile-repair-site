@@ -17,6 +17,12 @@
      --color-brand-secondary:#049e87;
      --color-brand-gray:#272F3E;
      --color-brand-info: #dff6f4;
+     --color-brand-orange: #ef732d;
+     --color-brand-blue: #3786f6;
+
+}
+html{
+     scroll-behavior: smooth;
 }
 body{
      font-family: 'Vazirmatn UI', sans-serif;
