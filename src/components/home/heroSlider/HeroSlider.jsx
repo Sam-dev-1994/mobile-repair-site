@@ -31,7 +31,7 @@ export default function ShopHeroSlider() {
 			>
 				{images.map((img, index) => (
 					<SwiperSlide key={index}>
-						<div className="w-full h-40  sm:h-70 md:h-86 lg:h-100 xl:h-130">
+						<div className="w-full h-56  sm:h-70 md:h-86 lg:h-100 xl:h-130">
 							<img
 								fetchPriority={index === 0 ? 'high' : 'auto'}
 								loading={index === 0 ? 'eager' : 'lazy'}

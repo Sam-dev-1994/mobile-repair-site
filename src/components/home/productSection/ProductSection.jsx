@@ -30,7 +30,7 @@ export default function ProductSection({ title, category }) {
 
 	return (
 		<section
-			className={`shadow shadow-gray-300 py-3  md:py-5 my-2 md:my-4 ${title === 'جدیدترین گوشی ها' ? 'bg-brand-secondary text-white ' : 'bg-white'} ${isLoading ? 'h-96' : 'h-auto'}`}
+			className={`shadow shadow-gray-300 py-2  md:py-5 my-2 md:my-4 ${title === 'جدیدترین گوشی ها' ? 'bg-brand-secondary text-white ' : 'bg-white'} ${isLoading ? 'h-96' : 'h-auto'}`}
 		>
 			<div className={`container  mx-auto p-3 `}>
 				<div className="flex justify-between items-center mb-3 sm:mb-4 border-b border-neutral-300 pb-3">
