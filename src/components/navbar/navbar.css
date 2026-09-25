@@ -28,3 +28,6 @@ z-index: 1000;
 .active{
      border-bottom: 1px solid var(--color-brand-secondary);
 }
+input::placeholder{
+     font-size: 12px;
+}

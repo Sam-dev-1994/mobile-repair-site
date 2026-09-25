@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-:root{
-     --swiper-theme-color: #049e87 !important;
-}
 @layer base{
    html , body{
         padding: 0;
@@ -12,66 +9,70 @@
    }
 }
 @theme{
-     --color-dark-bg:#030D1EFF;
-     --color-brand-primary:#09d3b4;
-     --color-brand-secondary:#049e87;
-     --color-brand-gray:#272F3E;
+     --color-dark-bg: #030D1EFF;
+     --color-brand-primary: #09d3b4;
+     --color-brand-secondary: #049e87;
+     --color-brand-gray: #272F3E;
      --color-brand-info: #dff6f4;
      --color-brand-orange: #ef732d;
      --color-brand-blue: #3786f6;
+     --color-brand-red:  #D22C4EFF;
 
-}
-html{
-     scroll-behavior: smooth;
 }
 body{
      font-family: 'Vazirmatn UI', sans-serif;
 }
-.swiper , .swiper-container , .swiper-slide ,.swiper-button-next , .swiper-button-prev ,
-.swiper-pagination-bullet:focus , .swiper-pagination-bullet:active , .swiper-pagination-bullet
-{
-     border: none !important;
-     outline: none !important;
-     box-shadow: none !important;
-}
-.repairGallery .gallery-swiper{
-     padding-bottom: 50px !important;
-     position: relative;
-}
-.repairGallery .gallery-swiper .swiper-pagination{
-     bottom: 10px !important;
-}
-.repairGallery .gallery-swiper .swiper-button-next ,
-.repairGallery .gallery-swiper .swiper-button-prev{
-     background-color: rgba(0,0,0,0.09);
-     width: 50px;
-     height: 50px;
-     padding: 9px;
+.swiper-button-prev,
+.swiper-button-next {
+     width: 25px !important;
+     height: 25px !important;
      border-radius: 50%;
-     color: #3c3b3b !important;
-     transition: all 300ms ease;
-     top: calc(50% - 27px) !important;
-}
-.repairGallery .gallery-swiper .swiper-button-next::after ,
-.repairGallery .gallery-swiper .swiper-button-prev::after{
-     font-size: 18px !important;
-     font-weight: bold;
-}
-.repairGallery .gallery-swiper .swiper-button-next:hover ,
-.repairGallery .gallery-swiper .swiper-button-prev:hover{
-     background-color: #fff;
-     box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+     background: rgba(255, 255, 255, 0.62);
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+     @media screen  and (min-width: 768px){
+          width: 40px !important;
+          height: 40px !important;
+     }
 }
 
-@media  (max-width: 640px) {
-     .repairGallery .gallery-swiper .swiper-button-next ,
-     .repairGallery .gallery-swiper .swiper-button-prev{
-          width: 45px;
-          height: 45px;
-          padding: 8px;
-     }
-     .repairGallery .gallery-swiper .swiper-button-next::after ,
-     .repairGallery .gallery-swiper .swiper-button-prev::after{
-          font-size: 5px !important;
+.swiper-button-prev > .swiper-navigation-icon,
+.swiper-button-next > .swiper-navigation-icon{
+     width: 7px;
+     color: #4c4e55 !important;
+     @media screen  and (min-width: 768px){
+          width: 10px !important;
+
      }
 }
+.swiper-pagination-bullet {
+     width: 10px !important;
+     height: 1px !important;
+     border-radius: 0 !important;
+     background: #d1d5db !important;
+     margin: -10px 2px !important;
+     opacity: 1;
+     transition: all 0.3s ease;
+
+     @media screen  and (min-width: 992px){
+          width: 36px !important;
+          height: 4px !important;
+     }
+}
+
+.swiper-pagination-bullet-active {
+     width: 20px !important;
+     @media screen  and (min-width: 992px){
+          width: 50px !important;
+
+     }
+}
+.marquee-swiper .swiper-wrapper{
+     transition-timing-function: linear !important;
+}
+
+@media screen and (min-width: 768px) {
+     .swiper-button-prev{
+          margin-left:50px !important;
+     }
+}
+
